@@ -17,7 +17,7 @@ export default function Home() {
         <div className="space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 via-pink-500 to-red-500 animate-gradient">
-              Hi, I'm Shashank Sangawar
+              Hi, I&apos;m Shashank Sangawar
             </span>
           </h1>
           <p className="max-w-[42rem] leading-normal text-muted-foreground text-sm sm:text-base md:text-lg lg:text-xl">
