@@ -70,6 +70,22 @@ export const projectsData = [
     liveDemo: 'https://2-player-game-mauve.vercel.app/',    
   },
   {
+    id: 'grocero',
+    title: 'Grocero',
+    description:
+      'An e-commerce platform specializing in daily consumables and groceries, Grocero enables users to explore and purchase products tailored to their unique preferences.',
+    slug: 'grocero',
+    images: [
+      '/Projects/Grocero/1.png',
+      '/Projects/Grocero/2.png',
+      '/Projects/Grocero/3.png',
+      '/Projects/Grocero/4.png',
+      '/Projects/Grocero/5.png',
+      '/Projects/Grocero/6.png',
+    ],
+    liveDemo: 'https://grocero-e-commmerce.vercel.app/',
+  },
+  {
     id: 'studywings',
     title: 'StudyWings',
     description:
