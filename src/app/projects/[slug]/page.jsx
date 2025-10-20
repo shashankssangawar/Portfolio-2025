@@ -30,13 +30,12 @@ export default async function ProjectPage({ params }) {
       <p className="text-lg mb-8 text-gray-400 text-center">{project.description}</p>
 
       {project.images && project.images.length > 0 ? (
-        <div className={`grid gap-4 mb-8 ${
-          project.images.length === 1
+        <div className={`grid gap-4 mb-8 ${project.images.length === 1
             ? 'grid-cols-1'
             : project.images.length === 2
-            ? 'grid-cols-1 sm:grid-cols-2'
-            : 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3'
-        }`}>
+              ? 'grid-cols-1 sm:grid-cols-2'
+              : 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3'
+          }`}>
           {project.images.map((image, index) => (
             <img
               key={index}

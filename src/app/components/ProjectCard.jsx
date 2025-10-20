@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
         <h2 className="text-2xl font-bold tracking-tight">{project.title}</h2>
       </CardHeader>
       <CardContent>
-        <p className="text-muted-foreground mb-4">{project.description}</p>
+        <p className="text-muted-foreground mb-4 line-clamp-5">{project.description}</p>
         {project.tags && (
           <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.map((tag) => (
@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
             ))}
           </div>
         )}
-        <Link 
+        <Link
           href={`/projects/${project.slug}`}
           className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium
           bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
