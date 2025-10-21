@@ -11,7 +11,14 @@ export const projectsData = [
     images: [
       '/Projects/TCH-Web-Demo/1.png',
       '/Projects/TCH-Web-Demo/2.png',
-      '/Projects/TCH-Web-Demo/3.png'
+      '/Projects/TCH-Web-Demo/3.png',
+      '/Projects/TCH-Web-Demo/4.png',
+      '/Projects/TCH-Web-Demo/5.png',
+      '/Projects/TCH-Web-Demo/6.png',
+      '/Projects/TCH-Web-Demo/7.png',
+      '/Projects/TCH-Web-Demo/8.png',
+      '/Projects/TCH-Web-Demo/9.png',
+      '/Projects/TCH-Web-Demo/10.png',
     ],
     liveDemo: 'https://tcheducare.com',
     features: [
@@ -70,7 +77,7 @@ export const projectsData = [
     id: 'laksh-healthcare',
     title: 'Laksh Healthcare',
     description:
-      '(Client Project) Laksh Healthcare is a professional and credible web platform for a modern healthcare provider, designed to highlight medical services, facilities, and contact details. The website features structured service listings, doctor profiles, and accessible navigation to instill trust among visitors. With a clean, minimalist design and optimized performance through Next.js, it ensures reliability and responsiveness across all devices. The project focuses on building confidence through visual clarity, structured content, and fast performance—ideal for medical and service-based institutions aiming for digital credibility.',
+      'Laksh Healthcare is a professional and credible web platform for a modern healthcare provider, designed to highlight medical services, facilities, and contact details. The website features structured service listings, doctor profiles, and accessible navigation to instill trust among visitors. With a clean, minimalist design and optimized performance through Next.js, it ensures reliability and responsiveness across all devices. The project focuses on building confidence through visual clarity, structured content, and fast performance—ideal for medical and service-based institutions aiming for digital credibility.',
     slug: 'laksh-healthcare',
     category: 'Business Website',
     tags: ['Healthcare', 'Medical', 'Next.js', 'Business', 'Services'],
@@ -78,7 +85,11 @@ export const projectsData = [
     images: [
       '/Projects/LakshHealthcare/1.png',
       '/Projects/LakshHealthcare/2.png',
-      '/Projects/LakshHealthcare/3.png'
+      '/Projects/LakshHealthcare/3.png',
+      '/Projects/LakshHealthcare/4.png',
+      '/Projects/LakshHealthcare/5.png',
+      '/Projects/LakshHealthcare/6.png',
+      '/Projects/LakshHealthcare/7.png',
     ],
     liveDemo: 'https://lakshhealthcare.com/',
     features: [
@@ -123,7 +134,7 @@ export const projectsData = [
     id: 'tech-n-culture',
     title: 'Tech-N-Culture Blog & Admin System',
     description:
-      '(Client Project) Tech-N-Culture is a dynamic blogging and content management platform focused on technology, culture, and lifestyle trends. It features an advanced admin system with analytics, traffic insights, and CRUD management for posts, categories, and tags. The site offers an elegant reader experience with advanced filtering, newsletter integration, and responsive layouts. Built with Next.js and React, it delivers optimized performance through lazy loading and data memoization. Designed for scalability and maintainability, the project merges design precision with data-driven functionality for both readers and administrators.',
+      'Tech-N-Culture is a dynamic blogging and content management platform focused on technology, culture, and lifestyle trends. It features an advanced admin system with analytics, traffic insights, and CRUD management for posts, categories, and tags. The site offers an elegant reader experience with advanced filtering, newsletter integration, and responsive layouts. Built with Next.js and React, it delivers optimized performance through lazy loading and data memoization. Designed for scalability and maintainability, the project merges design precision with data-driven functionality for both readers and administrators.',
     slug: 'tech-n-culture',
     category: 'Software',
     tags: ['React', 'Next.js', 'Admin Panel', 'Blog', 'Performance', 'Authentication', 'Responsive Design'],
@@ -194,18 +205,13 @@ export const projectsData = [
   },
   {
     id: 'echo',
-    title: 'AI Calling Agent',
+    title: 'Echo (AI Calling Agent)',
     description:
-      '(Side Project) Echo is an advanced AI-powered calling agent built with a modular monorepo structure using Next.js, Convex, and Clerk. The project focuses on developing embeddable widgets and dashboards that simulate intelligent voice-based interactions for businesses. It features atomic state management using Jotai, reusable UI components with shadcn/ui, and real-time database operations via Convex. Echo’s architecture supports multi-app environments with shared backend logic, authentication layers, and plug-and-play UI modules. Designed for scalability, it lays the foundation for a fully interactive, voice-enabled AI platform.',
+      '(Incomplete due to funds restriction) Echo is an advanced AI-powered calling agent built with a modular monorepo structure using Next.js, Convex, and Clerk. The project focuses on developing embeddable widgets and dashboards that simulate intelligent voice-based interactions for businesses. It features atomic state management using Jotai, reusable UI components with shadcn/ui, and real-time database operations via Convex. Echo’s architecture supports multi-app environments with shared backend logic, authentication layers, and plug-and-play UI modules. Designed for scalability, it lays the foundation for a fully interactive, voice-enabled AI platform.',
     slug: 'echo',
     category: 'Software',
     tags: ['Next.js', 'Convex', 'Clerk', 'Monorepo', 'Widget', 'Jotai', 'shadcn/ui'],
     status: 'In Progress',
-    images: [
-      '/Projects/Echo/1.png',
-      '/Projects/Echo/2.png',
-      '/Projects/Echo/3.png'
-    ],
     liveDemo: '',
     features: [
       'Monorepo structure with shared logic between web and widget apps',
@@ -214,8 +220,6 @@ export const projectsData = [
       'Embeddable widget supporting multiple states (auth, chat, selection, etc.)',
       'Jotai for efficient atomic state management',
       'Reusable and theme-consistent components using shadcn/ui',
-      'Dashboard modules for billing, files, customization, and integrations',
-      'Scalable architecture suitable for AI-driven conversational agents'
     ],
     myRole: [
       'Architected the project with a monorepo setup and shared packages',
@@ -251,8 +255,8 @@ export const projectsData = [
         status: 'Solved'
       },
       {
-        problem: 'Incomplete implementation for certain widget modules (voice, inbox)',
-        solution: 'Scaffolded placeholders and TODOs for iterative development',
+        problem: 'Incomplete implementation for certain widget modules (voice, inbox), (Need Funds to pay for apis....)',
+        solution: '',
         status: 'Part-Solved'
       }
     ],
@@ -272,13 +276,14 @@ export const projectsData = [
     slug: 'calendar-scheduler',
     category: 'Software',
     tags: ['Calendar', 'Scheduler', 'Google APIs', 'Appointment Booking'],
-    status: 'In Progress',
+    status: 'Incomplete',
     images: [
       '/Projects/Calendar-Scheduler/1.png',
       '/Projects/Calendar-Scheduler/2.png',
-      '/Projects/Calendar-Scheduler/3.png'
+      '/Projects/Calendar-Scheduler/3.png',
+      '/Projects/Calendar-Scheduler/4.png'
     ],
-    liveDemo: '',
+    liveDemo: 'https://calendar-scheduler-phi.vercel.app/',
     features: [
       'User authentication and authorization via Clerk',
       'Create, update, and delete calendar events with ease',
@@ -298,7 +303,7 @@ export const projectsData = [
     ],
     challenges: [
       {
-        problem: 'Synchronizing events with Google Calendar and handling missing connections',
+        problem: 'Synchronizing events with Google Calendar and handling missing connections (Need Guidance on Google APIs)',
         solution: '',
         status: 'Unsolved'
       },

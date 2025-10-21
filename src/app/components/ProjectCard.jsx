@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card className="group relative overflow-hidden border border-border/50 bg-background/50 backdrop-blur-sm transition-all hover:border-primary/50 hover:shadow-lg">
+    <Card className="group relative overflow-hidden border border-border/50 bg-background/50 backdrop-blur-sm transition-all hover:border-primary/50 hover:shadow-lg ">
       <CardHeader>
         <h2 className="text-2xl font-bold tracking-tight">{project.title}</h2>
       </CardHeader>
