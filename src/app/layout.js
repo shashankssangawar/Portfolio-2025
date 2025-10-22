@@ -7,8 +7,20 @@ import Header from "@/components/Header";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Shashank Sangawar',
-  description: 'A showcase of innovative work and cutting-edge skills',
+  title: {
+    default: `Portfolio | Shashank Sangawar`,
+    template: `%s | Shashank Sangawar`
+  },
+  description: "Explore my portfolio of web applications, tools, and software projects. Discover the technologies I work with and the solutions I've built.",
+  keywords: 'portfolio, web development, projects, react, next.js, full stack developer, software projects, web applications',
+  authors: [{ name: "TechCulture Team" }],
+  creator: 'Shashank Sangawar',
+  publisher: 'Shashank Sangawar',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 }
 
 export default function RootLayout({ children }) {

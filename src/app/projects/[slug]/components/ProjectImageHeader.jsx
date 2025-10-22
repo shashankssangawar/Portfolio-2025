@@ -72,6 +72,33 @@ export default function ProjectImageHeader({ project, setShowGallery }) {
         </div>
       );
     }
+    if (images.length === 4) {
+      return (
+        <div className="relative grid grid-cols-2 sm:grid-cols-4 grid-rows-2 gap-2 h-[400px] sm:h-[500px] rounded-lg sm:rounded-xl overflow-hidden">
+          <div className="row-span-2 md:col-span-2">
+            <img src={images[0]} alt={`${project.title} 0`} className="w-full h-full object-cover" />
+          </div>
+          {images.slice(1, 3).map((image, index) => (
+            <div key={index} className="relative cursor-pointer">
+              <img src={image} alt={`${project.title} ${index}`} className="w-full h-full object-cover" />
+            </div>
+          ))}
+          <div className="relative md:flex hidden cursor-pointer md:col-span-2">
+            <img src={images[3]} alt={`${project.title}-4`} className="w-full h-full object-cover" />
+          </div>
+          <Button
+            variant="secondary"
+            size="sm"
+            className="absolute bottom-4 right-4 text-xs sm:text-sm"
+            onClick={() => setShowGallery(true)}
+          >
+            <Grid3x3 className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
+            Show all photos
+          </Button>
+        </div>
+      );
+    }
+
 
     // 4 or more images
     return (

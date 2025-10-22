@@ -1430,11 +1430,11 @@ export const projectsData = [
     ]
   },
   {
-    id: 'portfolio‑1',
+    id: 'terminal-portfolio',
     title: 'Personal Portfolio Terminal Edition',
     description:
       `This unique, terminal‑inspired personal portfolio gives visitors a command‑line style experience to explore skills, projects and contact info. The interface simulates a bootloader, ASCII art banner, and accepts commands like help, about, projects, socials, contact, hire and more. It offers dynamic navigation and external link redirection inside the terminal UI for an immersive, retro feel. Built purely with HTML, CSS and JavaScript, the site emphasises creativity, interactivity and personal branding. The layout remains responsive and works on desktop and mobile devices alike. This project demonstrates front‑end innovation and playfulness while still communicating technical credentials.`,
-    slug: 'portfolio‑1',
+    slug: 'terminal-portfolio',
     category: 'Portfolio',
     tags: ['Portfolio', 'Unique', 'Terminal', 'Creative', 'Interactive UI'],
     status: 'Live',
@@ -1492,11 +1492,11 @@ export const projectsData = [
     ]
   },
   {
-    id: 'portfolio‑2',
+    id: 'redhood-portfolio',
     title: 'Personal Portfolio 2',
     description:
       `Personal Portfolio 2 is a modern, red‑themed personal website that merges professional presentation with a distinctive personal brand (Redhood). The site showcases my journey, skills and project work in a clean, visually striking design. Built with Next.js for static‑site performance and optimized for responsiveness, it delivers smooth navigation and fast load times. The signature red theme and subtle cosplay branding add character while maintaining a professional tone. With clear sections for projects, skills, about and contact, it serves as a polished personal hub. Ideal for personal branding, job‑search visibility and memorable first impressions.`,
-    slug: 'portfolio‑2',
+    slug: 'redhood-portfolio',
     category: 'Portfolio',
     tags: ['Portfolio', 'Red Theme', 'Personal Branding', 'Next.js', 'Static Site'],
     status: 'Live',

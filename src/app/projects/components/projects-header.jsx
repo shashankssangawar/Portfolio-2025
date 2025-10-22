@@ -18,14 +18,6 @@ export default function ProjectsHeader({ searchQuery, handleSearchChange, filter
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-6xl mx-auto text-center">
           <div className="container-modern py-4 md:py-6">
-            <div className="flex items-center gap-3 mb-4 md:mb-6">
-              <Link href="/home" className="flex items-center text-muted-foreground hover:text-foreground transition-colors">
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                <span className="hidden sm:inline">Back to Home</span>
-                <span className="sm:hidden">Back</span>
-              </Link>
-            </div>
-
             {/* Search Header */}
             <div className="space-y-4">
               <div>
@@ -63,7 +55,7 @@ export default function ProjectsHeader({ searchQuery, handleSearchChange, filter
                 {/* Filters */}
                 <div className='flex'>
                   <Select value={filters.category} onValueChange={(value) => setFilters({ ...filters, category: value })}>
-                    <SelectTrigger className="w-[180px]">
+                    <SelectTrigger className="md:w-[180px] w-full">
                       <SelectValue placeholder="Category" />
                     </SelectTrigger>
                     <SelectContent>
