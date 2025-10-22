@@ -541,7 +541,8 @@ export const projectsData = [
       '/Projects/Gameground/Software/3.png',
       '/Projects/Gameground/Software/4.png'
     ],
-    liveDemo: 'https://app.gameground.co.in/',
+    // liveDemo: 'https://app.gameground.co.in/',
+    liveDemo: '',
     features: [
       'RBAC (Role Based Access Control)',
       'Admin dashboard for monitoring and analytics',
@@ -588,7 +589,7 @@ export const projectsData = [
       '/Projects/Gameground/Website/2.png',
       '/Projects/Gameground/Website/3.png'
     ],
-    liveDemo: 'https://gameground.co.in/',
+    liveDemo: 'https://gg-website-steel.vercel.app/',
     features: [
       'Smooth Animation',
       'Music Complementing the video carousel.',
