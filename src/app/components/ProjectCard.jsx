@@ -1,10 +1,18 @@
 import Link from 'next/link'
 import { Card, CardHeader, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Image from 'next/image'
 
 const ProjectCard = ({ project }) => {
   return (
     <Card className="group relative overflow-hidden border border-border/50 bg-background/50 backdrop-blur-sm transition-all hover:border-primary/50 hover:shadow-lg ">
+      <Image
+        src={project.images?.[0]}
+        alt={project.title}
+        width={4000}
+        height={4000}
+        className='w-full h-60 -mt-6'
+      />
       <CardHeader>
         <h2 className="text-2xl font-bold tracking-tight">{project.title}</h2>
       </CardHeader>

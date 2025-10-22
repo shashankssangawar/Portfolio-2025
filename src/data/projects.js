@@ -213,6 +213,7 @@ export const projectsData = [
     tags: ['Next.js', 'Convex', 'Clerk', 'Monorepo', 'Widget', 'Jotai', 'shadcn/ui'],
     status: 'In Progress',
     liveDemo: '',
+    images: ['/Projects/Echo/1.jpg'],
     features: [
       'Monorepo structure with shared logic between web and widget apps',
       'Convex as the primary real-time database and backend service',
@@ -328,9 +329,9 @@ export const projectsData = [
   },
   {
     id: 'lms-saas',
-    title: 'LMS SaaS',
+    title: 'Converso (LMS SaaS)',
     description:
-      '(Side Project) LMS SaaS is a full-stack, AI-driven learning management platform designed to deliver an interactive and intelligent education experience. Built with Next.js, Supabase, and Vapi, it allows users to join real-time learning sessions powered by AI voice tutors. The platform includes user authentication, subscription management, personalized tutor creation, and session tracking. It emphasizes scalability, modularity, and a modern UI/UX for both students and educators. This project integrates voice AI, data synchronization, and analytics to create an advanced, future-ready learning system that blends human-like teaching with automation.',
+      'LMS SaaS is a full-stack, AI-driven learning management platform designed to deliver an interactive and intelligent education experience. Built with Next.js, Supabase, and Vapi, it allows users to join real-time learning sessions powered by AI voice tutors. The platform includes user authentication, subscription management, personalized tutor creation, and session tracking. It emphasizes scalability, modularity, and a modern UI/UX for both students and educators. This project integrates voice AI, data synchronization, and analytics to create an advanced, future-ready learning system that blends human-like teaching with automation.',
     slug: 'lms-saas',
     category: 'Software',
     tags: ['LMS', 'SAAS', 'AI Teacher', 'Text-to-Speech'],
@@ -338,9 +339,10 @@ export const projectsData = [
     images: [
       '/Projects/LMS-Saas/1.png',
       '/Projects/LMS-Saas/2.png',
-      '/Projects/LMS-Saas/3.png'
+      '/Projects/LMS-Saas/3.png',
+      '/Projects/LMS-Saas/4.png',
     ],
-    liveDemo: '',
+    liveDemo: 'https://lms-saas-two.vercel.app/',
     features: [
       'AI-powered voice tutors for interactive learning sessions',
       'Authentication via Clerk with Google and email login options',
@@ -393,8 +395,8 @@ export const projectsData = [
       },
       {
         problem: 'Build errors in production environments',
-        solution: '',
-        status: 'Unsolved'
+        solution: 'Used force-dynamic to render page dynamically rather than statically',
+        status: 'Solved'
       },
       {
         problem: 'Implementing adaptive learning paths and analytics',
@@ -464,7 +466,6 @@ export const projectsData = [
       'Responsive design and accessibility best practices',
     ]
   },
-
   {
     id: 'logistics',
     title: 'Link My Logistics',
@@ -1438,9 +1439,9 @@ export const projectsData = [
     tags: ['Portfolio', 'Unique', 'Terminal', 'Creative', 'Interactive UI'],
     status: 'Live',
     images: [
-      '/Projects/Portfolio‑1/1.png',
-      '/Projects/Portfolio‑1/2.png',
-      '/Projects/Portfolio‑1/3.png'
+      '/Projects/Portfolio1/1.png',
+      '/Projects/Portfolio1/2.png',
+      '/Projects/Portfolio1/3.png'
     ],
     liveDemo: 'https://shashanksangawar.github.io/',
     features: [
@@ -1500,9 +1501,9 @@ export const projectsData = [
     tags: ['Portfolio', 'Red Theme', 'Personal Branding', 'Next.js', 'Static Site'],
     status: 'Live',
     images: [
-      '/Projects/Portfolio‑2/1.png',
-      '/Projects/Portfolio‑2/2.png',
-      '/Projects/Portfolio‑2/3.png'
+      '/Projects/Portfolio2/1.png',
+      '/Projects/Portfolio2/2.png',
+      '/Projects/Portfolio2/3.png'
     ],
     liveDemo: 'https://redhood-schizophrenic.netlify.app',
     features: [
