@@ -1,135 +1,135 @@
 export const projectsData = [
-  {
-    id: 'tch-educare',
-    title: 'TCH Educare',
-    description:
-      'TCH Educare is a comprehensive educational management system designed to streamline academic, administrative, and financial operations. It provides a unified platform for managing students, staff, lectures, tests, and accounts with integrated communication features like WhatsApp notifications. Built with Next.js and React, it ensures modularity and ease of navigation across multiple modules. The platform includes features like enquiry tracking, admission workflows, study material sharing, and attendance monitoring. Designed for scalability, it serves as a robust foundation for modern digital education systems.',
-    slug: 'tch-educare',
-    category: 'Software',
-    tags: ['Next.js', 'Education', 'Management', 'React'],
-    status: 'In Progress',
-    images: [
-      '/Projects/TCH-Web-Demo/1.png',
-      '/Projects/TCH-Web-Demo/2.png',
-      '/Projects/TCH-Web-Demo/3.png',
-      '/Projects/TCH-Web-Demo/4.png',
-      '/Projects/TCH-Web-Demo/5.png',
-      '/Projects/TCH-Web-Demo/6.png',
-      '/Projects/TCH-Web-Demo/7.png',
-      '/Projects/TCH-Web-Demo/8.png',
-      '/Projects/TCH-Web-Demo/9.png',
-      '/Projects/TCH-Web-Demo/10.png',
-    ],
-    liveDemo: 'https://tcheducare.com',
-    features: [
-      'Student management: admission, batch view, bulk import/export, refunds',
-      'Staff management: attendance, performance tracking, role access',
-      'Accounts: expense tracking, billing, vouchers, and fee summaries',
-      'Educare module: announcements, study materials, and gallery updates',
-      'Lecture scheduling and faculty reporting modules',
-      'Test and exam management with result summaries',
-      'WhatsApp integration for automated notifications',
-      'Configurable settings for organization, branches, and standards'
-    ],
-    myRole: [
-      'Handled full-stack development and feature implementation',
-      'Designed modular UI/UX for seamless multi-module navigation',
-      'Built authentication and authorization flows for secure access',
-      'Integrated external services such as WhatsApp and gallery uploads',
-      'Optimized performance through reusable component patterns'
-    ],
-    challenges: [
-      {
-        problem: 'Unauthorized access to protected routes',
-        solution: 'Implemented secure redirection for unauthenticated users',
-        status: 'Solved'
-      },
-      {
-        problem: 'Efficiently handling bulk student data uploads',
-        solution: 'Developed import/export functionality for large datasets',
-        status: 'Solved'
-      },
-      {
-        problem: 'Complex navigation structure across modules',
-        solution: 'Created centralized navigation management via constants',
-        status: 'Solved'
-      },
-      {
-        problem: 'Ensuring data consistency across various management modules',
-        solution: 'Utilized form validations and modular dialog-based data entry',
-        status: 'Part-Solved'
-      },
-      {
-        problem: 'Integration of third-party services for communication and media',
-        solution: 'Implemented structured integration for WhatsApp and media services',
-        status: 'Solved'
-      }
-    ],
-    learnings: [
-      'Learned modular design principles for scalable app development',
-      'Understood the importance of centralized navigation systems',
-      'Enhanced data validation and error handling for bulk operations',
-      'Developed skills in external API integrations within full-stack systems',
-      'Improved user experience design through structured feedback systems'
-    ]
-  },
-  {
-    id: 'laksh-healthcare',
-    title: 'Laksh Healthcare',
-    description:
-      'Laksh Healthcare is a professional and credible web platform for a modern healthcare provider, designed to highlight medical services, facilities, and contact details. The website features structured service listings, doctor profiles, and accessible navigation to instill trust among visitors. With a clean, minimalist design and optimized performance through Next.js, it ensures reliability and responsiveness across all devices. The project focuses on building confidence through visual clarity, structured content, and fast performance—ideal for medical and service-based institutions aiming for digital credibility.',
-    slug: 'laksh-healthcare',
-    category: 'Business Website',
-    tags: ['Healthcare', 'Medical', 'Next.js', 'Business', 'Services'],
-    status: 'Live',
-    images: [
-      '/Projects/LakshHealthcare/1.png',
-      '/Projects/LakshHealthcare/2.png',
-      '/Projects/LakshHealthcare/3.png',
-      '/Projects/LakshHealthcare/4.png',
-      '/Projects/LakshHealthcare/5.png',
-      '/Projects/LakshHealthcare/6.png',
-      '/Projects/LakshHealthcare/7.png',
-    ],
-    liveDemo: 'https://lakshhealthcare.com/',
-    features: [
-      'Professional healthcare-themed landing page',
-      'Comprehensive service, facilities, and specialties sections',
-      'About Us and Team pages showcasing expertise and credibility',
-      'Contact and inquiry forms with integrated map/location details',
-      'Fully responsive and accessible design for all devices',
-      'Next.js-powered static and dynamic pages for optimal performance'
-    ],
-    myRole: [
-      'Developed and designed the complete website using Next.js',
-      'Organized content structure for services, team, and contact info',
-      'Implemented accessibility and responsive UI design',
-      'Optimized website speed and SEO for client visibility'
-    ],
-    challenges: [
-      {
-        problem: 'Organizing large healthcare data clearly for users',
-        solution: 'Implemented structured sections with icons and concise copywriting',
-        status: 'Solved'
-      },
-      {
-        problem: 'Building trust for a professional healthcare brand',
-        solution: 'Integrated team bios, certifications, and a clean aesthetic',
-        status: 'Solved'
-      },
-      {
-        problem: 'Ensuring consistent performance across screen sizes',
-        solution: 'Applied responsive design principles and adaptive layouts',
-        status: 'Solved'
-      }
-    ],
-    learnings: [
-      'Learned effective structuring for service-based websites',
-      'Understood the importance of trust elements in healthcare design',
-      'Enhanced skills in accessibility and cross-device optimization',
-      'Applied best practices for SEO and performance in Next.js projects'
-    ]
-  },
+  // {
+  //   id: 'tch-educare',
+  //   title: 'TCH Educare',
+  //   description:
+  //     'TCH Educare is a comprehensive educational management system designed to streamline academic, administrative, and financial operations. It provides a unified platform for managing students, staff, lectures, tests, and accounts with integrated communication features like WhatsApp notifications. Built with Next.js and React, it ensures modularity and ease of navigation across multiple modules. The platform includes features like enquiry tracking, admission workflows, study material sharing, and attendance monitoring. Designed for scalability, it serves as a robust foundation for modern digital education systems.',
+  //   slug: 'tch-educare',
+  //   category: 'Software',
+  //   tags: ['Next.js', 'Education', 'Management', 'React'],
+  //   status: 'In Progress',
+  //   images: [
+  //     '/Projects/TCH-Web-Demo/1.png',
+  //     '/Projects/TCH-Web-Demo/2.png',
+  //     '/Projects/TCH-Web-Demo/3.png',
+  //     '/Projects/TCH-Web-Demo/4.png',
+  //     '/Projects/TCH-Web-Demo/5.png',
+  //     '/Projects/TCH-Web-Demo/6.png',
+  //     '/Projects/TCH-Web-Demo/7.png',
+  //     '/Projects/TCH-Web-Demo/8.png',
+  //     '/Projects/TCH-Web-Demo/9.png',
+  //     '/Projects/TCH-Web-Demo/10.png',
+  //   ],
+  //   liveDemo: 'https://tcheducare.com',
+  //   features: [
+  //     'Student management: admission, batch view, bulk import/export, refunds',
+  //     'Staff management: attendance, performance tracking, role access',
+  //     'Accounts: expense tracking, billing, vouchers, and fee summaries',
+  //     'Educare module: announcements, study materials, and gallery updates',
+  //     'Lecture scheduling and faculty reporting modules',
+  //     'Test and exam management with result summaries',
+  //     'WhatsApp integration for automated notifications',
+  //     'Configurable settings for organization, branches, and standards'
+  //   ],
+  //   myRole: [
+  //     'Handled full-stack development and feature implementation',
+  //     'Designed modular UI/UX for seamless multi-module navigation',
+  //     'Built authentication and authorization flows for secure access',
+  //     'Integrated external services such as WhatsApp and gallery uploads',
+  //     'Optimized performance through reusable component patterns'
+  //   ],
+  //   challenges: [
+  //     {
+  //       problem: 'Unauthorized access to protected routes',
+  //       solution: 'Implemented secure redirection for unauthenticated users',
+  //       status: 'Solved'
+  //     },
+  //     {
+  //       problem: 'Efficiently handling bulk student data uploads',
+  //       solution: 'Developed import/export functionality for large datasets',
+  //       status: 'Solved'
+  //     },
+  //     {
+  //       problem: 'Complex navigation structure across modules',
+  //       solution: 'Created centralized navigation management via constants',
+  //       status: 'Solved'
+  //     },
+  //     {
+  //       problem: 'Ensuring data consistency across various management modules',
+  //       solution: 'Utilized form validations and modular dialog-based data entry',
+  //       status: 'Part-Solved'
+  //     },
+  //     {
+  //       problem: 'Integration of third-party services for communication and media',
+  //       solution: 'Implemented structured integration for WhatsApp and media services',
+  //       status: 'Solved'
+  //     }
+  //   ],
+  //   learnings: [
+  //     'Learned modular design principles for scalable app development',
+  //     'Understood the importance of centralized navigation systems',
+  //     'Enhanced data validation and error handling for bulk operations',
+  //     'Developed skills in external API integrations within full-stack systems',
+  //     'Improved user experience design through structured feedback systems'
+  //   ]
+  // },
+  // {
+  //   id: 'laksh-healthcare',
+  //   title: 'Laksh Healthcare',
+  //   description:
+  //     'Laksh Healthcare is a professional and credible web platform for a modern healthcare provider, designed to highlight medical services, facilities, and contact details. The website features structured service listings, doctor profiles, and accessible navigation to instill trust among visitors. With a clean, minimalist design and optimized performance through Next.js, it ensures reliability and responsiveness across all devices. The project focuses on building confidence through visual clarity, structured content, and fast performance—ideal for medical and service-based institutions aiming for digital credibility.',
+  //   slug: 'laksh-healthcare',
+  //   category: 'Business Website',
+  //   tags: ['Healthcare', 'Medical', 'Next.js', 'Business', 'Services'],
+  //   status: 'Live',
+  //   images: [
+  //     '/Projects/LakshHealthcare/1.png',
+  //     '/Projects/LakshHealthcare/2.png',
+  //     '/Projects/LakshHealthcare/3.png',
+  //     '/Projects/LakshHealthcare/4.png',
+  //     '/Projects/LakshHealthcare/5.png',
+  //     '/Projects/LakshHealthcare/6.png',
+  //     '/Projects/LakshHealthcare/7.png',
+  //   ],
+  //   liveDemo: 'https://lakshhealthcare.com/',
+  //   features: [
+  //     'Professional healthcare-themed landing page',
+  //     'Comprehensive service, facilities, and specialties sections',
+  //     'About Us and Team pages showcasing expertise and credibility',
+  //     'Contact and inquiry forms with integrated map/location details',
+  //     'Fully responsive and accessible design for all devices',
+  //     'Next.js-powered static and dynamic pages for optimal performance'
+  //   ],
+  //   myRole: [
+  //     'Developed and designed the complete website using Next.js',
+  //     'Organized content structure for services, team, and contact info',
+  //     'Implemented accessibility and responsive UI design',
+  //     'Optimized website speed and SEO for client visibility'
+  //   ],
+  //   challenges: [
+  //     {
+  //       problem: 'Organizing large healthcare data clearly for users',
+  //       solution: 'Implemented structured sections with icons and concise copywriting',
+  //       status: 'Solved'
+  //     },
+  //     {
+  //       problem: 'Building trust for a professional healthcare brand',
+  //       solution: 'Integrated team bios, certifications, and a clean aesthetic',
+  //       status: 'Solved'
+  //     },
+  //     {
+  //       problem: 'Ensuring consistent performance across screen sizes',
+  //       solution: 'Applied responsive design principles and adaptive layouts',
+  //       status: 'Solved'
+  //     }
+  //   ],
+  //   learnings: [
+  //     'Learned effective structuring for service-based websites',
+  //     'Understood the importance of trust elements in healthcare design',
+  //     'Enhanced skills in accessibility and cross-device optimization',
+  //     'Applied best practices for SEO and performance in Next.js projects'
+  //   ]
+  // },
   {
     id: 'tech-n-culture',
     title: 'Tech-N-Culture Blog & Admin System',

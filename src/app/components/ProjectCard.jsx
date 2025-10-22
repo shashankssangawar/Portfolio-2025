@@ -5,37 +5,45 @@ import Image from 'next/image'
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card className="group relative overflow-hidden border border-border/50 bg-background/50 backdrop-blur-sm transition-all hover:border-primary/50 hover:shadow-lg ">
-      <Image
-        src={project.images?.[0]}
-        alt={project.title}
-        width={4000}
-        height={4000}
-        className='w-full h-60 -mt-6'
-      />
-      <CardHeader>
-        <h2 className="text-2xl font-bold tracking-tight">{project.title}</h2>
-      </CardHeader>
-      <CardContent>
-        <p className="text-muted-foreground mb-4 line-clamp-5">{project.description}</p>
-        {project.tags && (
-          <div className="flex flex-wrap gap-2 mb-4">
-            {project.tags.map((tag) => (
-              <Badge key={tag} variant="secondary">
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        )}
-        <Link
-          href={`/projects/${project.slug}`}
-          className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium
+    <Link href={`/projects/${project.slug}`}>
+      <Card className="h-full group relative overflow-hidden border border-border/50 bg-background/50 backdrop-blur-sm transition-all hover:border-primary/50 hover:shadow-lg ">
+        <Image
+          src={project.images?.[0]}
+          alt={project.title}
+          width={4000}
+          height={4000}
+          className='w-full h-64 -mt-6 object-cover'
+        />
+        <CardHeader>
+          <h2 className="text-2xl font-bold tracking-tight">{project.title}</h2>
+        </CardHeader>
+        <CardContent>
+          <p className="text-muted-foreground mb-4 line-clamp-5">{project.description}</p>
+          {project.tags && (
+            <div className="flex flex-wrap gap-2 mb-4">
+              {project.tags?.slice(0, 3).map((tag) => (
+                <Badge key={tag} variant="outline">
+                  {tag}
+                </Badge>
+              ))}
+              {
+                project?.tags?.length > 3 && (
+                  <Badge variant="secondary">
+                    +{project?.tags?.length - 3} more
+                  </Badge>
+                )
+              }
+            </div>
+          )}
+          <button
+            className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium
           bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-        >
-          View Project
-        </Link>
-      </CardContent>
-    </Card>
+          >
+            View Project
+          </button>
+        </CardContent>
+      </Card>
+    </Link>
   )
 }
 

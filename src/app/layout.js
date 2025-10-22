@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         >
           <div className="min-h-screen bg-gradient-to-b from-background to-background/80 dark:from-background dark:to-background/80">
             <Header />
-            <main className="container mx-auto px-4">{children}</main>
+            <main>{children}</main>
             <Footer />
           </div>
         </ThemeProvider>
