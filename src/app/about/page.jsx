@@ -1,27 +1,37 @@
-import Image from 'next/image'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import AboutSection from "./components/AboutSection"
+import SkillsSection from "./components/SkillsSection"
+import TechnologySection from "./components/TechnologySection"
+import ExperienceSection from "./components/ExperienceSection"
+import EducationSection from "./components/EducationSection"
 
 export default function About() {
   return (
-    <div className="container mx-auto px-4 py-16">
-      <div className="max-w-3xl mx-auto mb-12 text-center">
-        <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/80 to-primary/60 animate-gradient">
-          About Me
-        </h1>
-        <p className="text-muted-foreground text-lg">
-          A small introduction about me
-        </p>
-      </div>
-      <div className="flex flex-col items-center">
-        <div className="md:w-1/2 md:pl-8">
-          <p className="text-lg mb-4">
-            I'm <span className='font-semibold'> Full Stack Developer </span> from India. With 3+ of experience in software development, I specialize in creating robust, scalable applications that solve real-world problems.
-          </p>
-          <p className="text-lg">
-            My passion for technology and problem-solving drives me to continuously learn and adapt to new technologies and methodologies in the ever-evolving world of software development.
-          </p>
-        </div>
-      </div>
+    <div className="container mx-auto px-4 pb-16 pt-4">
+      <Tabs defaultValue="about" className="w-full h-full">
+        <TabsList className="w-full h-full bg-card grid md:grid-cols-5 grid-cols-2">
+          <TabsTrigger value="about">About</TabsTrigger>
+          <TabsTrigger value="skills">Skills</TabsTrigger>
+          <TabsTrigger value="technologies">Technologies</TabsTrigger>
+          <TabsTrigger value="experience">Experience</TabsTrigger>
+          <TabsTrigger value="education">Education</TabsTrigger>
+        </TabsList>
+        <TabsContent value="about">
+          <AboutSection />
+        </TabsContent>
+        <TabsContent value="skills">
+          <SkillsSection />
+        </TabsContent>
+        <TabsContent value="technologies">
+          <TechnologySection />
+        </TabsContent>
+        <TabsContent value="experience">
+          <ExperienceSection />
+        </TabsContent>
+        <TabsContent value="education">
+          <EducationSection />
+        </TabsContent>
+      </Tabs>
     </div>
-  )
-}
-
+  );
+};

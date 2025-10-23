@@ -52,20 +52,6 @@ export default function Header() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 group-hover:w-full transition-all duration-300" />
             </Link>
             <Link
-              href="/skills"
-              className="text-sm font-medium transition-all duration-200 hover:text-primary relative group"
-            >
-              Skills
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 group-hover:w-full transition-all duration-300" />
-            </Link>
-            <Link
-              href="/tech-stacks"
-              className="text-sm font-medium transition-all duration-200 hover:text-primary relative group"
-            >
-              Tech Stacks
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 group-hover:w-full transition-all duration-300" />
-            </Link>
-            <Link
               href="/about"
               className="text-sm font-medium transition-all duration-200 hover:text-primary relative group"
             >
@@ -93,8 +79,6 @@ export default function Header() {
             <div className="container py-4 flex flex-col gap-4">
               {[
                 ["Projects", "/projects"],
-                ["Skills", "/skills"],
-                ["Tech Stacks", "/tech-stacks"],
                 ["About", "/about"],
                 ["Contact", "/contact"],
               ].map(([label, href]) => (
