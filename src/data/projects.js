@@ -1,4 +1,98 @@
 export const projectsData = [
+  {
+    id: 'driveroz-ride-sharing-app',
+    title: 'Driveroz - Ride Sharing Platform',
+    description: "(Side Project) A full-stack ride-sharing application built with Next.js featuring real-time location tracking, route calculation, and dual interfaces for both riders and drivers. Includes interactive maps, geolocation services, and dynamic pricing calculations.",
+    slug: 'driveroz-ride-sharing-app',
+    category: 'Software',
+    tags: ['Next.js', 'React', 'Leaflet', 'Geolocation', 'Maps', 'Real-time', 'Tailwind CSS', 'OpenStreetMap', 'OSRM'],
+    status: 'In Progress',
+    images: [
+      '/Projects/driveroz/1.png',
+      '/Projects/driveroz/2.png',
+      '/Projects/driveroz/3.png',
+      '/Projects/driveroz/4.png',
+    ],
+    liveDemo: 'https://driveroz.vercel.app/',
+    features: [
+      'Dual interface for riders and drivers',
+      'Real-time location tracking and updates',
+      'Interactive map with custom markers using Leaflet',
+      'Route calculation and optimization using OSRM API',
+      'Location search with autocomplete using Nominatim API',
+      'Dynamic pricing based on distance and ride type',
+      'Multiple ride options (Mini, Sedan, SUV)',
+      'Driver dashboard with earnings tracking',
+      'Ride request management system',
+      'Responsive design for mobile and desktop',
+      'Dark/light theme support',
+      'Real-time driver status (online/offline)',
+      'Location swap functionality',
+      'Current location detection',
+      'Route visualization with turn-by-turn directions'
+    ],
+    myRole: [
+      'Handled development and feature implementation',
+      'Designed modular UI/UX for seamless navigation',
+    ],
+    challenges: [
+      {
+        problem: 'Server-Side Rendering (SSR) issues with browser-only APIs like window, navigator.geolocation, and Leaflet maps causing build failures',
+        solution: 'Implemented proper SSR checks using typeof window !== "undefined" guards and created dynamic imports with ssr: false for map components to prevent server-side execution',
+        status: 'Solved'
+      },
+      {
+        problem: 'Leaflet map library causing hydration mismatches and SSR errors in Next.js',
+        solution: 'Created a dynamic import wrapper component that loads maps only on client-side with loading states and proper error boundaries',
+        status: 'Solved'
+      },
+      {
+        problem: 'Real-time location tracking and updates for drivers without WebSocket infrastructure',
+        solution: 'Implemented simulated location updates using setInterval for demo purposes, with proper cleanup and state management',
+        status: 'Part-Solved'
+      },
+      {
+        problem: 'Complex state management across multiple components for ride booking flow',
+        solution: 'Used React hooks pattern with custom hooks (useRouting, useLocationSearch) to encapsulate business logic and share state',
+        status: 'Solved'
+      },
+      {
+        problem: 'Handling geolocation permissions and errors gracefully across different browsers',
+        solution: 'Implemented comprehensive error handling with user-friendly messages and fallback to default locations',
+        status: 'Solved'
+      },
+      {
+        problem: 'Route calculation and visualization between multiple points',
+        solution: 'Integrated OSRM API for route calculation and Leaflet for route visualization with proper error handling and loading states',
+        status: 'Solved'
+      },
+      {
+        problem: 'Mobile responsiveness for map-heavy interface',
+        solution: 'Implemented responsive design with flexible layouts and mobile-first approach using Tailwind CSS',
+        status: 'Solved'
+      },
+      {
+        problem: 'Real-time ride matching and driver-rider communication system',
+        solution: '',
+        status: 'Unsolved'
+      }
+    ],
+    learnings: [
+      'Next.js SSR/CSR hybrid rendering and when to use dynamic imports',
+      'Geolocation API best practices and error handling strategies',
+      'Leaflet map integration with React and custom marker creation',
+      'External API integration (OSRM, Nominatim) with proper error handling',
+      'Custom React hooks for complex state management and business logic',
+      'Responsive design patterns for map-based applications',
+      'Performance optimization for real-time location updates',
+      'TypeScript-like prop validation and component architecture',
+      'Tailwind CSS advanced patterns and component styling',
+      'Browser API compatibility and progressive enhancement',
+      'Debouncing techniques for search functionality',
+      'Route calculation algorithms and map visualization',
+      'Mobile-first design principles for location-based apps'
+    ]
+  },
   // {
   //   id: 'tch-educare',
   //   title: 'TCH Educare',
