@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-background/60 supports-[backdrop-filter]:bg-background/30">
       <div className="absolute inset-0 border-b border-border/40" />
-      <div className="container relative flex h-16 items-center p-4">
+      <div className="container relative flex h-16 items-center p-4 mx-auto">
         <nav className="flex flex-1 items-center justify-between">
           <Link
             href="/"
@@ -63,6 +63,13 @@ export default function Header() {
               className="text-sm font-medium transition-all duration-200 hover:text-primary relative group"
             >
               Contact
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 group-hover:w-full transition-all duration-300" />
+            </Link>
+            <Link
+              href="/blog"
+              className="text-sm font-medium transition-all duration-200 hover:text-primary relative group"
+            >
+              Blogs
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 group-hover:w-full transition-all duration-300" />
             </Link>
             <div className="pl-2 border-l border-border/40">

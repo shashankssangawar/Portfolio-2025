@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
           <Toaster />
           <div className="min-h-screen bg-gradient-to-b from-background to-background/80 dark:from-background dark:to-background/80">
             <Header />
-            <main>{children}</main>
+            <main className="w-full">{children}</main>
             <Footer />
           </div>
         </ThemeProvider>

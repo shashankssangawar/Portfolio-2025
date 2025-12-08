@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="container relative min-h-screen flex flex-col items-center justify-center gap-8 px-4 sm:px-6 lg:px-8 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+    <div className="relative min-h-screen w-full flex flex-col items-center justify-center gap-8 px-4 sm:px-6 lg:px-8 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
       <BackgroundRippleEffect />
 
       <div className="flex flex-col items-center gap-8 text-center relative z-20">
@@ -16,8 +16,8 @@ export default function Home() {
               Hi, I&apos;m Shashank Sangawar
             </span>
           </h1>
-          <p className="max-w-[42rem] leading-normal text-muted-foreground text-sm sm:text-base md:text-lg lg:text-xl shadow-2xl">
-            A Full-Stack Developer and App Developer.
+          <p className="leading-normal text-muted-foreground text-sm sm:text-base md:text-lg lg:text-xl shadow-2xl">
+            Software Developer & DevOps Engineer
           </p>
         </div>
 
