@@ -190,3 +190,24 @@
   border-style: none;
   border-radius: 6px;
 }
+
+/* Copy button inserted by rehype-pretty-code */
+button.copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  width: 0.5rem;
+  /* 16px */
+  height: 0.5rem;
+  /* 16px */
+}
+
+button.copy-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

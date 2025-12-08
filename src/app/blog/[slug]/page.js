@@ -10,6 +10,7 @@ import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react';
 import { BLOGS } from '@/constants/blogs';
 import '../blog.css';
 import { Badge } from '@/components/ui/badge';
+import { markdownToHtml } from '@/lib/markdown-to-html';
 
 // Force dynamic rendering if necessary, but since we are reading files, static generation is better if we knew all paths.
 // For now, we'll just let Next.js handle it.
@@ -45,6 +46,9 @@ export default async function BlogPost({ params }) {
   if (!blog) {
     notFound();
   }
+
+  // Convert Markdown to HTML with syntax highlighting + copy button
+  const htmlContent = await markdownToHtml(blog.content);
 
   return (
     <article className="min-h-screen pb-20">
@@ -102,12 +106,7 @@ export default async function BlogPost({ params }) {
             prose-img:rounded-xl prose-img:shadow-lg
             prose-blockquote:border-l-primary prose-blockquote:bg-muted/50 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg
           ">
-            <ReactMarkdown
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeHighlight]}
-            >
-              {blog.content}
-            </ReactMarkdown>
+            <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
           </div>
         </div>
       </div>
