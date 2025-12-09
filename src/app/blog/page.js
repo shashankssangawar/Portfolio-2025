@@ -81,7 +81,7 @@ export default function BlogPage() {
             </p>
           )}
 
-          {filteredBlogs.map((blog) => (
+          {[...filteredBlogs].reverse().map((blog) => (
             <Link href={`/blog/${blog.slug}`} key={blog.id} className="group">
               <article className="bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-border h-full flex flex-col">
                 <div className="relative h-48 w-full overflow-hidden">
@@ -114,7 +114,7 @@ export default function BlogPage() {
                         key={tag}
                         className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded-md"
                       >
-                        #{tag}
+                        {tag}
                       </span>
                     ))}
                   </div>
