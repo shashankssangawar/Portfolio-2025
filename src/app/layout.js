@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: {
-    default: `Portfolio | Shashank Sangawar`,
+    default: `Shashank Sangawar | Portfolio`,
     template: `%s | Shashank Sangawar`
   },
   description: "Explore my portfolio of web applications, tools, and software projects. Discover the technologies I work with and the solutions I've built.",
